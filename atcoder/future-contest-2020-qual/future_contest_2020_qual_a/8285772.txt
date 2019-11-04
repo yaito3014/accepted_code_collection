@@ -1,0 +1,4 @@
+// URL: https://atcoder.jp/contests/future-contest-2020-qual/submissions/8285772
+// Date: Mon, 04 Nov 2019 06:00:16 +0000
+// Language: Text (cat)
+0
