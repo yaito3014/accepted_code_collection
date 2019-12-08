@@ -1,0 +1,19 @@
+name: Fetch source
+
+on:
+  schedule:
+    - cron: '00 00 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Install envitonment
+      run: |
+        sudo apt-get -y install dos2unix libxml2-utils
+    - name: Fetch source
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: |
+        ./submission_crawler.sh
