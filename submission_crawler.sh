@@ -29,6 +29,7 @@ get_extension() {
   *Lisp*) echo "lisp" ;;
   *Perl*) echo "pl" ;;
   *Ruby*) echo "rb" ;;
+  *Rust*) echo "rs" ;;
   *Text*) echo "txt" ;;
   *Awk*) echo "awk" ;;
   *C++*) echo "cpp" ;;
