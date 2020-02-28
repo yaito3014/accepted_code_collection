@@ -11,6 +11,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Install envitonment
       run: |
+        sudo apt-get -y update
         sudo apt-get -y install dos2unix libxml2-utils
     - name: Fetch source
       env:
