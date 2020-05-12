@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Install envitonment
+    - name: Install environment
       run: |
         sudo apt-get -y update
         sudo apt-get -y install dos2unix libxml2-utils
