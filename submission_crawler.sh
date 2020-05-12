@@ -49,7 +49,7 @@ get_extension() {
 IFS=$'\n'
 
 git config --global user.name "yaito3014"
-git config --global user.email "yaito3014@gmail.com"
+git config --global user.email "ykakeyama3014@gmail.com"
 git remote set-url origin https://yaito3014:${GITHUB_TOKEN}@github.com/yaito3014/competitive_programming.git
 git checkout -b master
 
