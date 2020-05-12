@@ -48,16 +48,16 @@ get_extension() {
 
 IFS=$'\n'
 
-git config --global user.name "ecto0310"
-git config --global user.email "ecto0310@gmail.com"
-git remote set-url origin https://ecto0310:${GITHUB_TOKEN}@github.com/ecto0310/competitive_programming.git
+git config --global user.name "yaito3014"
+git config --global user.email "yaito3014@gmail.com"
+git remote set-url origin https://yaito3014:${GITHUB_TOKEN}@github.com/yaito3014/competitive_programming.git
 git checkout -b master
 
 new_submissions="[]"
 
-at_username="ecto0310"
-cf_username="ecto0310"
-aoj_username="ecto0310"
+at_username="kakeyamay"
+cf_username="kakeyamay"
+aoj_username="kakeyamay"
 
 at_submissions=$(
   curl -so- --compressed https://kenkoooo.com/atcoder/atcoder-api/results?user=${at_username} |

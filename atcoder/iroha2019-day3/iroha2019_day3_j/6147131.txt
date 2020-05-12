@@ -1,4 +1,0 @@
-// URL: https://atcoder.jp/contests/iroha2019-day3/submissions/6147131
-// Date: Fri, 28 Jun 2019 08:43:36 +0000
-// Language: Text (cat)
-Judgement
