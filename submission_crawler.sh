@@ -174,7 +174,7 @@ for new_submission in ${new_submissions}; do
   fi
 
   mkdir -p "${directory}"
-  echo -e "${header}\n${code}" >${filename}
+  echo -e "${header}\n${code//\\/\\\\}" >${filename}
 
   git add -A
   git commit -a -m "Add ${filename}" --date="$(date -d @${time} -R)"
