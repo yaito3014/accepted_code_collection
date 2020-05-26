@@ -1,6 +1,9 @@
 name: Fetch source
 
 on:
+  push:
+    branches: 
+      - master
   schedule:
     - cron: '00 00 * * *'
 
