@@ -50,7 +50,7 @@ IFS=$'\n'
 
 git config --global user.name "yaito3014"
 git config --global user.email "ykakeyama3014@gmail.com"
-git remote set-url origin https://yaito3014:${GITHUB_TOKEN}@github.com/yaito3014/https://github.com/yaito3014/accepted_code_collection.git
+git remote set-url origin https://yaito3014:${GITHUB_TOKEN}@github.com/yaito3014/accepted_code_collection.git
 git checkout -b master
 
 new_submissions="[]"
