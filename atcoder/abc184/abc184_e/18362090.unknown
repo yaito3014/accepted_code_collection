@@ -1,0 +1,37 @@
+// URL: https://atcoder.jp/contests/abc184/submissions/18362090
+// Date: Mon, 23 Nov 2020 04:51:07 +0000
+// Language: PyPy3 (7.3.0)
+import collections
+h, w = map(int, input().split())
+s = h * w
+g = ''.join(input() for _ in range(h))
+m = [-1] * (s + 26)
+v = [False] * (s + 26)
+t = [list() for _ in range(26)]
+q = collections.deque()
+for i in range(s):
+	if g[i] == 'S':
+		q.append(i)
+		m[i] = 0
+		v[i] = True
+	elif g[i] == 'G':
+		e = i
+	elif 'a' <= g[i] <= 'z':
+		t[ord(g[i])-ord('a')].append(i)
+while len(q):
+	c = q.popleft()
+	def u(n, p):
+		if v[n] or (n < s and g[n] == '#'): return
+		v[n] = True
+		m[n] = m[c] + p
+		if p: q.append(n)
+		else: q.appendleft(n)
+	if c >= s:
+		for n in t[c - s]: u(n, 1)
+		continue
+	if c % w != 0: u(c - 1, 1)
+	if c % w != w - 1: u(c + 1, 1)
+	if c - w >= 0: u(c - w, 1)
+	if c + w < s: u(c + w, 1)
+	if 'a' <= g[c] <= 'z': u(s + ord(g[c]) - ord('a'), 0)
+print(m[e])
