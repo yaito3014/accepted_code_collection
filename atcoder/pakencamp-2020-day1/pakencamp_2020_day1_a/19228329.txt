@@ -1,0 +1,4 @@
+// URL: https://atcoder.jp/contests/pakencamp-2020-day1/submissions/19228329
+// Date: Wed, 06 Jan 2021 03:38:02 +0000
+// Language: Text (cat 8.28)
+2021
